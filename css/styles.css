@@ -716,6 +716,12 @@ img {
   vertical-align: top;
 }
 
+.horizontal-scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
 /* -----footer---- */
 
 .footer-box-container {
