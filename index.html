@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo"> <span class="text">PhotoStudio</span> </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link current" href="./index.html">About</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#gallery">My gallery</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="connect">
+          <ul class="connect__menu">
+            <li class="connect__list">
+              <a class="connect__link" href="mailto:Eva.dotsenko1515@gmail.com"
+                ><svg class="connect__icon" width="16" height="12">
+                  <use href="./img/icons.svg#icon-email"></use></svg>Eva.dotsenko1515@gmail.com
+              </a>
+            </li>
+            <li class="connect__list">
+              <a class="connect__link" href="tel:+34643523271"
+                ><svg class="connect__icon" width="12" height="16">
+                  <use href="./img/icons.svg#icon-smartphone"></use></svg>+34 643 523 271</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="modal__menu" data-menu-open>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+      <div class="mob__menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button class="menu__close" data-menu-close>
+              <span class="material-symbols-outlined">home</span>
+            </button>
+            <ul class="mob-menu">
+              <li class="mob__item">
+                <a class="menu__link" href="./index.html">About</a>
+              </li>
+              <li class="mob__item">
+                <a class="menu__link" href="#gallery">My gallery</a>
+              </li>
+              <li class="mob__item">
+                <a class="menu__link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob">
+              <ul class="mob__menu-list">
+                <li class="mob__list-item">
+                  <a class="mob__link-item" href="mailto:Eva.dotsenko1515@gmail.com">Eva.dotsenko1515@gmail.com</a>
+                </li>
+                <li class="mob__list-item">
+                  <a class="mob__link-item" href="tel:+34643523271">+34 643 523 271</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="mob__menu-soc">
+              <li class="mob__list-soc">
+                <a
+                  href="https://instagram.com/jenna_dots?igshid=NTc4MTIwNjQ2YQ=="
+                  class="mob__link-soc--after"
+                  aria-label="instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob__list-soc">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100007153896330"
+                  class="mob__link-soc--after"
+                  aria-label="facebook"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container-box section">
+      <div class="card-wraper">
+        <h1 class="titel animate__animated animate__wobble">jenna_dots</h1>
+        <p class="hero-after-title">
+          Photography and video for me is a way to escape from everyday life, to forget myself in
+          creativity and to capture viewers in the world created by my eyes.
+        </p>
+      </div>
+    </section>
+    <section class="section" data-aos="fade" data-aos-duration="2000">
+      <div class="container">
+        <ul class="card__menu">
+          <li class="card__list" data-aos="fade" data-aos-duration="2000">
+            <video
+              class="card-video"
+              src="./img/video.MOV"
+              controls
+              width="240"
+              height="360"
+            ></video>
+            <h3 class="card__title">ATTENTION TO DETAIL</h3>
+            <p class="card__text">
+              Ideological considerations, and even the beginning of the daily work of forming a
+              position.
+            </p>
+          </li>
+          <li class="card__list" data-aos="fade" data-aos-duration="2000">
+            <video
+              class="card-video"
+              src="./img/video-2.MOV"
+              controls
+              width="240"
+              height="360"
+            ></video>
+            <h3 class="card__title">PUNCTUALITY</h3>
+            <p class="card__text">
+              The organisation's objectives, especially the scope and location of staff training,
+              entail.
+            </p>
+          </li>
+          <li class="card__list" data-aos="fade" data-aos-duration="2000">
+            <video
+              class="card-video"
+              src="./img/video-3.MOV"
+              controls
+              width="240"
+              height="360"
+            ></video>
+            <h3 class="card__title">PLANNING</h3>
+            <p class="card__text">
+              Every detail is given to my work. From the selection of the idea to each shot,
+              attention to detail is always at the forefront.
+            </p>
+          </li>
+          <li class="card__list" data-aos="fade" data-aos-duration="2000">
+            <video
+              class="card-video"
+              src="./img/video-4.MOV"
+              controls
+              width="240"
+              height="360"
+            ></video>
+            <h3 class="card__title">MODERN TECHNOLOGIES</h3>
+            <p class="card__text">
+              In today's world, technology is transforming my work into something more than just
+              images. From high-resolution stills to immersive videos, technology empowers me to
+              create unique stories that leave a lasting impact.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section data-aos="fade" data-aos-duration="2000">
+      <div class="external" id="gallery">
+        <div class="horizontal-scroll-wrapper">
+          <div class="img-wrapper slower">
+            <img src="./img/photo_5.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper faster">
+            <img src="./img/photo_6.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper slower vertical">
+            <img src="./img/photo1.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper slower slower-down">
+            <img src="./img/photo_2.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper">
+            <img src="./img/photo_3.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper slower">
+            <img src="./img/photo_4.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper faster1">
+            <img src="./img/photo_7.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper slower slower2">
+            <img src="./img/photo_8.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper">
+            <img src="./img/photo_9.jpg" alt="" />
+          </div>
+
+          <div class="img-wrapper slower">
+            <img src="./img/photo_10.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="box" id="contact" data-aos="fade" data-aos-duration="2000">
+      <div class="footer-box-container container">
+        <div class="address-list">
+          <a href="./index.html" class="logo"> <span class="text_2">PhotoStudio</span> </a>
+          <ul class="menu-list">
+            <li class="footer-list-item">
+              <a
+                class="address"
+                href="https://goo.gl/maps/z5jqXAXh9WThRQnYA"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >Av. Antonio Belón, 29602 Marbella</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a class="list-item-link" href="mailto:Eva.dotsenko1515@gmail.com"
+                >Eva.dotsenko1515@gmail.com</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a class="list-item-link" href="tel:+34643523271">+34 643 523 271</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <p class="footer-page">join</p>
+          <ul class="images-links">
+            <li class="footer-soc-item">
+              <a
+                href="https://instagram.com/jenna_dots?igshid=NTc4MTIwNjQ2YQ=="
+                class="footer-soc-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-soc-link-icon" width="20px" height="20px">
+                  <use href="./img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a
+                href="https://www.facebook.com/profile.php?id=100007153896330"
+                class="footer-soc-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-soc-link-icon" width="20px" height="20px">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-item">
+              <a
+                href="#"
+                class="footer-soc-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-soc-link-icon" width="20px" height="20px">
+                  <use href="./img/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="18" height="18">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
