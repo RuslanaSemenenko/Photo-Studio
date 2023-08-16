@@ -182,6 +182,10 @@ img {
   margin-bottom: 32px;
 }
 
+.mob__item:first-child {
+  margin-top: 45px;
+}
+
 .mob__link-item {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -224,7 +228,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 64px;
+  margin-top: -44px;
   @media screen and (min-width: 480px) {
     gap: 20px;
   }
@@ -308,7 +312,7 @@ img {
 
 .menu__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 25px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
@@ -317,6 +321,9 @@ img {
   &:hover,
   &:focus {
     color: #f4924c;
+  }
+     @media screen and (min-width: 768px) {
+    font-size: 18px;
   }
 }
 
@@ -390,7 +397,7 @@ img {
   }
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #000000;
